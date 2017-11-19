@@ -1,22 +1,25 @@
 import React from 'react';
 import './Device.css';
+import PowerButton from '../PowerButton';
+
 
 class Bobbie extends React.Component {
   static propTypes = {}
   render = () => {
     const device = this.props.device;
     const deviceStatus = device.online ? "online" : "offline";
+    const deviceState =  device.online ? device.controller_log.relay_state === 1 ? "" : "off" : "";
     return (
-      <div className={"device " + device.type + " " + deviceStatus} key={device.id}>
-
+      <div className={"device " + device.type + " " + deviceStatus + " " + deviceState} key={device.id}>
         <div className="device-upper">
           <div className="image-holder">
            <img className="bobbie" src={device.online ? require('./img/bobbie.png') : require('./img/bobbie-offline.png')} alt="bobbie" />
+           {device.online ? <PowerButton state={device.controller_log.relay_state} changeState={this.props.changeBobbieState}/> : <div/>}
           </div>
           <p className="name">{device.name}</p>
           <p className={deviceStatus}>The device is offline.</p>
         </div>
-        
+
         {device.online 
         ? <div className="info">
           <span className="device-info">cold: {device.controller_log.cold.toFixed(2)}</span>

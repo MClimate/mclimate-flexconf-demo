@@ -3,7 +3,6 @@
     overflow: hidden;
     display: inline-block;
 }
-
 .device{
     list-style-type: none;
     text-align: center;
@@ -22,7 +21,6 @@
     font-size: 12px;
     position: relative;
 }
-
 .device.offline{
     background-color: #d6d6d6;
     color: #34444a;
@@ -32,13 +30,10 @@
 }
 .image-holder{
     overflow: hidden;
-
 }
 .device p{
     text-align: left;
-    /* margin-left: 30px; */
     line-height: 15px;
-    /* margin-top: 0; */
 }
 .device p.name{
     font-weight: bold;
@@ -50,7 +45,6 @@
     position: relative;
     left: 0;
 }
-
 .device p.online{
     display: none;
 }
@@ -82,24 +76,24 @@
     display: block;
 }
 .device img{
-    /* position: absolute; */
     left: 10px;
     width: 40px;
     top: 10px;
     float: left;
 }
-
 .device img.melissa{
     position: absolute;
     width: 43px;
     top: 20px;
 }
-
 .device img.bobbie{
     width: 30px;
     top: 13px;
 }
-
+.device.bobbie.off{
+    background-color: #202e34;
+    color: white;
+}
 .device img.smart_plug{
     width: 30px;
     left: 18px;

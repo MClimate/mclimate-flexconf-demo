@@ -13,5 +13,10 @@
     font-weight: 500;
     background-image: -moz-linear-gradient( 120deg, rgb( 1, 110, 241) 0%, rgb( 1, 174, 240) 97.925%, rgb( 1, 174, 240) 100%);
     background-image: -webkit-linear-gradient( 120deg, rgb( 1, 110, 241) 0%, rgb( 1, 174, 240) 97.925%, rgb( 1, 174, 240) 100%);
-    box-shadow: 2.64px 12.627px 27px -2px rgba(1, 110, 241, 0.26)    
+    box-shadow: 2.64px 12.627px 27px -2px rgba(1, 110, 241, 0.26);    
+}
+.btn img{
+    width: 22px;
+    float: left;
+    vertical-align: middle;
 }

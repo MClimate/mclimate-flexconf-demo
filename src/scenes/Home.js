@@ -1,6 +1,8 @@
 import React from 'react';
 import Api from '../services/api'
 import Storage from '../services/storage'
+
+import Device from '../components/Device'
 export default class Home extends React.Component {
 
   static isPrivate = true;
@@ -24,7 +26,7 @@ export default class Home extends React.Component {
       <div className="content">
         <h1>{' Home '}</h1>
         <div className="devices-holder">
-        {this.state.devices.map( device =><div className="devices"> <div className={"device " + device.type} key={device.id}><img className={device.type} src={require('./img/' + device.type + '.png')}/><p>{device.name}</p></div></div>)}
+          {this.state.devices.map( device => <Device device={device} />)}
         </div>
       </div>
     </div>;

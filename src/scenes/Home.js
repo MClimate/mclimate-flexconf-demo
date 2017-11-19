@@ -16,15 +16,18 @@ export default class Home extends React.Component {
     const token = Storage.getAccessToken();
     Api.getUserControllers(token).then( ({data}) => {
       this.setState({devices:data._embedded.controller});
+      console.log(data)
     })
   }
 
   render() {
-    return <div>
+    return <div className="home">
+    <div className="content">
       <h1>{' Home '}</h1>
-      <ul>
-      {this.state.devices.map( device => <li>{device.name}</li>)}
-      </ul>
+      <div className="devices-holder">
+      {this.state.devices.map( device =><div className="devices"> <div className={"device " + device.type} key={device.id}><img className={device.type} src={require('./img/' + device.type + '.png')}/><p>{device.name}</p></div></div>)}
+      </div>
+    </div>
     </div>;
   }
 }

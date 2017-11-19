@@ -1,0 +1,17 @@
+.btn{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    width: 80%;
+    padding: 10px 14px;
+    color: white;
+    border-radius: 50px;
+    outline: 0;
+    text-decoration: none;
+    border: none;
+    margin: 10px auto;
+    font-weight: 500;
+    background-image: -moz-linear-gradient( 120deg, rgb( 1, 110, 241) 0%, rgb( 1, 174, 240) 97.925%, rgb( 1, 174, 240) 100%);
+    background-image: -webkit-linear-gradient( 120deg, rgb( 1, 110, 241) 0%, rgb( 1, 174, 240) 97.925%, rgb( 1, 174, 240) 100%);
+    box-shadow: 2.64px 12.627px 27px -2px rgba(1, 110, 241, 0.26)    
+}

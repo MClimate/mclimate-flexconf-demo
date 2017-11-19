@@ -3,3 +3,21 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.content{
+  padding: 10px;
+  overflow: hidden;
+}
+h1{
+  text-align: center;
+  font-weight: normal;
+  color: #3e9ac3;
+}
+ul{
+  overflow: hidden;
+  padding-left: 0;
+  margin: 0 auto;
+  display: block;
+}
+ul li{
+  list-style-type: none;
+}

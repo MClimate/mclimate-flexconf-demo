@@ -16,7 +16,6 @@ export default class Home extends React.Component {
     const token = Storage.getAccessToken();
     Api.getUserControllers(token).then( ({data}) => {
       this.setState({devices:data._embedded.controller});
-      console.log(data)
     })
   }
 

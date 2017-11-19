@@ -21,12 +21,12 @@ export default class Home extends React.Component {
 
   render() {
     return <div className="home">
-    <div className="content">
-      <h1>{' Home '}</h1>
-      <div className="devices-holder">
-      {this.state.devices.map( device =><div className="devices"> <div className={"device " + device.type} key={device.id}><img className={device.type} src={require('./img/' + device.type + '.png')}/><p>{device.name}</p></div></div>)}
+      <div className="content">
+        <h1>{' Home '}</h1>
+        <div className="devices-holder">
+        {this.state.devices.map( device =><div className="devices"> <div className={"device " + device.type} key={device.id}><img className={device.type} src={require('./img/' + device.type + '.png')}/><p>{device.name}</p></div></div>)}
+        </div>
       </div>
-    </div>
     </div>;
   }
 }

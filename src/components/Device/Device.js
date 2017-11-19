@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Device.css';
+import './Device.css';
 
 import SmartPlug from './SmartPlug';
 import Melissa from './Melissa';

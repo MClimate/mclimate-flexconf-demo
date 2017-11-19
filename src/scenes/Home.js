@@ -26,7 +26,7 @@ export default class Home extends React.Component {
       <div className="content">
         <h1>{' Home '}</h1>
         <div className="devices-holder">
-          {this.state.devices.map( device => <Device device={device} />)}
+          {this.state.devices.map( device => <Device key={device.id} device={device} />)}
         </div>
       </div>
     </div>;

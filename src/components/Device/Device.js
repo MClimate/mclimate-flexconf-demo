@@ -12,7 +12,7 @@ class Device extends React.Component {
   render = () => {
     const device = this.props.device;
     return (
-    <div key={device.id} className="devices">
+    <div className="devices">
       {device.type == "melissa" && <Melissa device={device} />}
       {device.type == "bobbie" && <Bobbie device={device} />}
       {device.type == "smart_plug" && <SmartPlug device={device} />}

@@ -23,6 +23,17 @@ class Api {
             }
         })
     }
+
+    static fetchSensorData(token,sn){
+        return axios.post(`${API_URL}/provider/fetch`, {
+            serial_number: sn
+        }, {
+            headers:{
+                'Content-Type':'application/json',
+                'Authorization':`Bearer ${token}`
+            }
+        })
+    }
 }
 
 export default Api;

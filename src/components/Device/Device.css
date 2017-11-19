@@ -1,0 +1,118 @@
+.devices{
+    width: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.device{
+    list-style-type: none;
+    text-align: center;
+    background-color: #eaf1f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 5px;
+    color: #3e9ac3;
+    font-weight: normal;
+    -webkit-box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.24);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    height: 140px;
+    font-size: 12px;
+    position: relative;
+}
+
+.device.offline{
+    background-color: #d6d6d6;
+    color: #34444a;
+}
+.device-upper{
+    height: 50px;
+}
+.image-holder{
+    overflow: hidden;
+
+}
+.device p{
+    text-align: left;
+    /* margin-left: 30px; */
+    line-height: 15px;
+    /* margin-top: 0; */
+}
+.device p.name{
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+    left: 15px;
+}
+.device.offline p.name{
+    position: relative;
+    left: 0;
+}
+
+.device p.online{
+    display: none;
+}
+.device p.offline{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    line-height: 0;
+    position: relative;
+    bottom: 4px;
+}
+.info{
+    text-align: left;
+    position: relative;
+    left: 2px;
+    font-weight: lighter;
+    top: 30px;
+}
+.device-info{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 40%;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: left;
+}
+.melissa .device-info{
+    width: 100%;
+    display: block;
+}
+.device img{
+    /* position: absolute; */
+    left: 10px;
+    width: 40px;
+    top: 10px;
+    float: left;
+}
+
+.device img.melissa{
+    position: absolute;
+    width: 43px;
+    top: 20px;
+}
+
+.device img.bobbie{
+    width: 30px;
+    top: 13px;
+}
+
+.device img.smart_plug{
+    width: 30px;
+    left: 18px;
+}
+
+@media (max-width: 360px){
+    .device p{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 90%;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+        text-align: left;
+    }
+}

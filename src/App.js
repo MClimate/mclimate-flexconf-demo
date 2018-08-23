@@ -10,6 +10,7 @@ import CallbackURI from './scenes/CallbackURI';
 export default () => 
   <Router>
     <Switch>
+      <Route component={ Login } path="/" />
       <Route component={ Login } path="/login" />
       <Route component={ CallbackURI } path="/callback" />
       <Route component={ Home } path="/home" />
